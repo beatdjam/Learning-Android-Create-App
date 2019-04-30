@@ -27,6 +27,7 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="48dp"
             android:layout_marginRight="48dp" app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintBaseline_toBaselineOf="@+id/textView1" android:importantForAutofill="no"
+            android:maxLength="9"
             tools:ignore="LabelFor,UnusedAttribute"/>
     <TextView
             android:text="@string/discount_label"
@@ -45,7 +46,9 @@
             app:layout_constraintBaseline_toBaselineOf="@+id/textView2" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="48dp" android:layout_marginRight="48dp"
             app:layout_constraintStart_toEndOf="@+id/textView2" android:layout_marginLeft="32dp"
-            android:layout_marginStart="32dp" android:importantForAutofill="no" tools:ignore="LabelFor,UnusedAttribute"/>
+            android:layout_marginStart="32dp" android:importantForAutofill="no" tools:ignore="LabelFor,UnusedAttribute"
+            android:maxLength="2"
+    />
     <Button
             android:text="@string/calculate_button"
             android:layout_width="wrap_content"

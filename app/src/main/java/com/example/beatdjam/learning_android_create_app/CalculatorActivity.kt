@@ -36,6 +36,5 @@ class CalculatorActivity : AppCompatActivity() {
         return !text.isEmpty()
     }
 
-    private fun EditText.toInt () : Int = this.toString().toInt()
-
+    private fun EditText.toInt () : Int = this.text.toString().toInt()
 }
