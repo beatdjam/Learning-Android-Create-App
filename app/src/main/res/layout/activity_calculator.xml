@@ -31,7 +31,7 @@
     <TextView
             android:text="@string/discount_label"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="26dp"
             android:id="@+id/textView2"
             android:labelFor="@+id/discount"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" android:layout_marginTop="32dp"
