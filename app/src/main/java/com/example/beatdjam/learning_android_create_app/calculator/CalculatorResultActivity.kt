@@ -1,8 +1,9 @@
-package com.example.beatdjam.learning_android_create_app
+package com.example.beatdjam.learning_android_create_app.calculator
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.example.beatdjam.learning_android_create_app.R
 
 class CalculatorResultActivity : AppCompatActivity() {
 

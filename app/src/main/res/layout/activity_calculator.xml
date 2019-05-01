@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".CalculatorActivity" android:id="@+id/ConstraintLayout">
+        tools:context=".calculator.CalculatorActivity" android:id="@+id/ConstraintLayout">
 
     <TextView
             android:text="@string/price_label"

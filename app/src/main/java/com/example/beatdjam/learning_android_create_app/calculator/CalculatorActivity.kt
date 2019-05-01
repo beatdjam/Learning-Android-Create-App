@@ -1,10 +1,11 @@
-package com.example.beatdjam.learning_android_create_app
+package com.example.beatdjam.learning_android_create_app.calculator
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import com.example.beatdjam.learning_android_create_app.R
 
 class CalculatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
