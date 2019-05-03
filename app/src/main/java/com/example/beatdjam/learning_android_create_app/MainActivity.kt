@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.example.beatdjam.learning_android_create_app.calculator.CalculatorActivity
 import com.example.beatdjam.learning_android_create_app.listview.ListViewActivity
 import com.example.beatdjam.learning_android_create_app.sharedpreferences.SharedPreferencesActivity
+import com.example.beatdjam.learning_android_create_app.worldclock.WorldClockActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +25,10 @@ class MainActivity : AppCompatActivity() {
 
         listview.setOnClickListener {
             startActivity(Intent(this, ListViewActivity::class.java))
+        }
+
+        worldclock.setOnClickListener {
+            startActivity(Intent(this, WorldClockActivity::class.java))
         }
     }
 }
