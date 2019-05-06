@@ -14,11 +14,9 @@ class TimeZoneSelectActivity : AppCompatActivity() {
         setContentView(R.layout.activity_time_zone_select)
 
         setResult(Activity.RESULT_CANCELED)
-
-        val adapter = TimeZoneAdapter(this)
-        clockList.adapter = adapter
-
         clockList.also{ list ->
+            val adapter = TimeZoneAdapter(this)
+            list.adapter = adapter
             list.setOnItemClickListener { _, _, position, _ ->
                 val timeZone = adapter.getItem(position)
 
