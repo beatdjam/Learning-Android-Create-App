@@ -3,9 +3,9 @@ package com.example.beatdjam.learning_android_create_app.listview
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.ArrayAdapter
-import android.widget.ListView
 import android.widget.Toast
 import com.example.beatdjam.learning_android_create_app.R
+import kotlinx.android.synthetic.main.activity_list_view.*
 import java.util.*
 
 class ListViewActivity : AppCompatActivity() {
@@ -22,7 +22,7 @@ class ListViewActivity : AppCompatActivity() {
             timeZones
         )
 
-        findViewById<ListView>(R.id.timeZoneList).also {
+        timeZoneList.also {
             it.adapter = adapter
             it.setOnItemClickListener { _, _, position, _ ->
                 val timeZone = adapter.getItem(position)
