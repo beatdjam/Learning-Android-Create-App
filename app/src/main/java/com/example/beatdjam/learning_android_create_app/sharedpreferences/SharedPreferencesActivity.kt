@@ -4,7 +4,8 @@ import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.example.beatdjam.learning_android_create_app.R
-import kotlinx.android.synthetic.main.activity_shared_preferences.*
+import kotlinx.android.synthetic.main.activity_shared_preferences.editText
+import kotlinx.android.synthetic.main.activity_shared_preferences.store
 
 class SharedPreferencesActivity : AppCompatActivity() {
 

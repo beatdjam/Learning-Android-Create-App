@@ -7,8 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import com.example.beatdjam.learning_android_create_app.R
-import kotlinx.android.synthetic.main.list_time_zone_row.view.*
-import java.util.*
+import kotlinx.android.synthetic.main.activity_world_clock.view.timeZone
+import kotlinx.android.synthetic.main.list_time_zone_row.view.clock
+import java.util.TimeZone
 
 class TimeZoneAdapter(
     context: Context,

@@ -7,7 +7,10 @@ import com.example.beatdjam.learning_android_create_app.calculator.CalculatorAct
 import com.example.beatdjam.learning_android_create_app.listview.ListViewActivity
 import com.example.beatdjam.learning_android_create_app.sharedpreferences.SharedPreferencesActivity
 import com.example.beatdjam.learning_android_create_app.worldclock.WorldClockActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main.calculator
+import kotlinx.android.synthetic.main.activity_main.listview
+import kotlinx.android.synthetic.main.activity_main.sharedpreferences
+import kotlinx.android.synthetic.main.activity_main.worldclock
 
 class MainActivity : AppCompatActivity() {
 

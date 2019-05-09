@@ -5,7 +5,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.example.beatdjam.learning_android_create_app.R
-import kotlinx.android.synthetic.main.activity_time_zone_select.*
+import kotlinx.android.synthetic.main.activity_time_zone_select.clockList
 
 class TimeZoneSelectActivity : AppCompatActivity() {
 

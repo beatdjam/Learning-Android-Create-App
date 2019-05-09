@@ -6,8 +6,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.example.beatdjam.learning_android_create_app.R
-import kotlinx.android.synthetic.main.activity_world_clock.*
-import java.util.*
+import kotlinx.android.synthetic.main.activity_world_clock.add
+import kotlinx.android.synthetic.main.activity_world_clock.clockList
+import kotlinx.android.synthetic.main.activity_world_clock.timeZone
+import java.util.TimeZone
 
 class WorldClockActivity : AppCompatActivity() {
 

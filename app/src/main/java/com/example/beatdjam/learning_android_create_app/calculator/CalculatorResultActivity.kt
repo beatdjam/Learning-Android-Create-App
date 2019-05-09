@@ -3,7 +3,8 @@ package com.example.beatdjam.learning_android_create_app.calculator
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.example.beatdjam.learning_android_create_app.R
-import kotlinx.android.synthetic.main.activity_calculator_result.*
+import kotlinx.android.synthetic.main.activity_calculator_result.expression_label
+import kotlinx.android.synthetic.main.activity_calculator_result.result_label
 
 class CalculatorResultActivity : AppCompatActivity() {
 
