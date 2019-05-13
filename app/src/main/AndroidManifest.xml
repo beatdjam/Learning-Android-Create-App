@@ -11,6 +11,8 @@
             android:theme="@style/AppTheme">
         <activity android:name=".asynctask.AsyncTaskLoaderActivity">
         </activity>
+        <activity android:name=".asynctask.CoroutinesActivity">
+        </activity>
         <activity android:name=".worldclock.TimeZoneSelectActivity">
         </activity>
         <activity android:name=".worldclock.WorldClockActivity">
