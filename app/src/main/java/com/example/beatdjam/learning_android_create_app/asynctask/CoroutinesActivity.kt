@@ -8,6 +8,7 @@ import kotlinx.android.synthetic.main.activity_async_task_loader.fileContent
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import java.io.File
 
 class CoroutinesActivity : AppCompatActivity() {
@@ -23,11 +24,18 @@ class CoroutinesActivity : AppCompatActivity() {
 
         GlobalScope.launch (Dispatchers.Main) {
             val filePath = "${applicationInfo.dataDir}/shared_prefs/sample.xml"
-            fileContent.text = File(filePath)
-                                    .reader()
-                                    .buffered()
-                                    .readLines()
-                                    .joinToString("\n")
+            val result = withContext(Dispatchers.IO) {
+                runCatching {
+                    File(filePath)
+                        .reader()
+                        .readLines()
+                        .joinToString("\n")
+                }
+            }
+            result.fold(
+                onSuccess = { fileContent.text = it },
+                onFailure = { fileContent.text = "read failure" }
+            )
         }
     }
 }
