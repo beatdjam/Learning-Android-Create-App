@@ -7,12 +7,14 @@ import com.example.beatdjam.learning_android_create_app.asynctask.AsyncTaskLoade
 import com.example.beatdjam.learning_android_create_app.asynctask.CoroutinesActivity
 import com.example.beatdjam.learning_android_create_app.calculator.CalculatorActivity
 import com.example.beatdjam.learning_android_create_app.listview.ListViewActivity
+import com.example.beatdjam.learning_android_create_app.recyclerview.RecyclerViewActivity
 import com.example.beatdjam.learning_android_create_app.sharedpreferences.SharedPreferencesActivity
 import com.example.beatdjam.learning_android_create_app.worldclock.WorldClockActivity
 import kotlinx.android.synthetic.main.activity_main.asynctask
 import kotlinx.android.synthetic.main.activity_main.calculator
 import kotlinx.android.synthetic.main.activity_main.coroutines
 import kotlinx.android.synthetic.main.activity_main.listview
+import kotlinx.android.synthetic.main.activity_main.recyclerview
 import kotlinx.android.synthetic.main.activity_main.sharedpreferences
 import kotlinx.android.synthetic.main.activity_main.worldclock
 
@@ -45,5 +47,10 @@ class MainActivity : AppCompatActivity() {
         coroutines.setOnClickListener {
             startActivity(Intent(this, CoroutinesActivity::class.java))
         }
+
+        recyclerview.setOnClickListener {
+            startActivity(Intent(this, RecyclerViewActivity::class.java))
+        }
+
     }
 }
