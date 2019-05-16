@@ -8,4 +8,6 @@
     <string name="expression">%1$,3d円の%2$d%%引きは</string>
     <string name="result">%1$,3d円です</string>
     <string name="add_label">追加する</string>
+    <string name="newsTitle">ニュースタイトル</string>
+    <string name="pubDate">%1$m月%1$td日%1$H時</string>
 </resources>
