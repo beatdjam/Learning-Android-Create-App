@@ -1,7 +1,9 @@
 package com.example.beatdjam.learning_android_create_app.rssreader
 
+import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.customtabs.CustomTabsIntent
 import android.support.v4.app.LoaderManager
 import android.support.v4.content.Loader
 import android.support.v7.widget.GridLayoutManager
@@ -15,7 +17,8 @@ class RssReaderActivity : AppCompatActivity(), LoaderManager.LoaderCallbacks<Rss
         if (data != null) {
             val recyclerView = articles
             val adapter = ArticleAdapter(this, data.articles) {
-                // TODO 記事クリック時の挙動
+                val intent = CustomTabsIntent.Builder().build()
+                intent.launchUrl(this, Uri.parse(it.link))
             }
             recyclerView.adapter = adapter
             recyclerView.layoutManager = GridLayoutManager(this, 2)
