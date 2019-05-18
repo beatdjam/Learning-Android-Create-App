@@ -9,5 +9,5 @@
     <string name="result">%1$,3d円です</string>
     <string name="add_label">追加する</string>
     <string name="newsTitle">ニュースタイトル</string>
-    <string name="pubDate">%1$m月%1$td日%1$H時</string>
+    <string name="pubDate">%1$tm月%1$td日%1$tH時</string>
 </resources>

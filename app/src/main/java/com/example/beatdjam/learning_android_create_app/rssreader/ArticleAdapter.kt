@@ -32,7 +32,7 @@ class ArticleAdapter(
     override fun onBindViewHolder(holder: ArticleViewHolder, position: Int) {
         val article = articles[position]
         holder.title.text = article.title
-        holder.pubDate.text = context.getString(R.string.pubDate, article.pubDate.toString())
+        holder.pubDate.text = context.getString(R.string.pubDate, article.pubDate)
     }
 
     class ArticleViewHolder(view : View) : RecyclerView.ViewHolder(view) {
