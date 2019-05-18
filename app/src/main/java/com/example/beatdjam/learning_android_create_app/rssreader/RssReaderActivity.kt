@@ -11,3 +11,21 @@ class RssReaderActivity : AppCompatActivity() {
         setContentView(R.layout.activity_rss_reader)
     }
 }
+
+data class Person(
+    val name : String,
+    val age : Int
+) {
+    class Builder(
+        private var name : String? = null,
+        private var age : Int? = null
+    ) {
+        fun name(name : String) = this.also { it.name = name }
+        fun age(age : Int) = this.also { it.age = age }
+        fun build() = Person(this.name!!, this.age!!)
+    }
+    companion object {
+        @JvmStatic
+        fun builder() = Builder()
+    }
+}
