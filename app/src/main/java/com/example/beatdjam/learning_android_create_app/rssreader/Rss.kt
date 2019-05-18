@@ -1,13 +1,13 @@
 package com.example.beatdjam.learning_android_create_app.rssreader
 
+import android.content.Context
+import android.support.v4.content.AsyncTaskLoader
 import org.w3c.dom.Node
 import org.w3c.dom.NodeList
 import java.io.InputStream
 import java.text.SimpleDateFormat
-import java.util.Collections
 import java.util.Date
 import java.util.Locale
-import javax.xml.parsers.DocumentBuilder
 import javax.xml.parsers.DocumentBuilderFactory
 import javax.xml.xpath.XPathConstants
 import javax.xml.xpath.XPathFactory
@@ -42,6 +42,42 @@ fun parseRss(stream: InputStream) : Rss {
         pubDate = formatter.parse(xPath.evaluate("/rss/channel/pubDate/text()", doc)),
         articles = articles
     )
+}
+
+class RssLoader(context : Context) : AsyncTaskLoader<Rss>(context) {
+    private var cache : Rss? = null
+
+    override fun loadInBackground(): Rss? {
+        val response =  httpGet("https://www.sbbit.jp/rss/HotTopics.rss")
+        return if (response != null) {
+            parseRss(response)
+        } else null
+    }
+
+    override fun deliverResult(data: Rss?) {
+        if (isReset || data == null) return
+
+        cache = data
+        super.deliverResult(data)
+    }
+
+    override fun onStartLoading() {
+        if (cache != null) deliverResult(cache)
+
+        if (takeContentChanged() || cache == null) {
+            forceLoad()
+        }
+    }
+
+    override fun onStopLoading() {
+        cancelLoad()
+    }
+
+    override fun onReset() {
+        super.onReset()
+        onStopLoading()
+        cache = null
+    }
 }
 
 object XmlUtil {
