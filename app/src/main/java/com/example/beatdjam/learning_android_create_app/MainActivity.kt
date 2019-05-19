@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.example.beatdjam.learning_android_create_app.asynctask.AsyncTaskLoaderActivity
 import com.example.beatdjam.learning_android_create_app.asynctask.CoroutinesActivity
 import com.example.beatdjam.learning_android_create_app.calculator.CalculatorActivity
+import com.example.beatdjam.learning_android_create_app.file.FileActivity
 import com.example.beatdjam.learning_android_create_app.listview.ListViewActivity
 import com.example.beatdjam.learning_android_create_app.recyclerview.RecyclerViewActivity
 import com.example.beatdjam.learning_android_create_app.rssreader.RssReaderActivity
@@ -14,6 +15,7 @@ import com.example.beatdjam.learning_android_create_app.worldclock.WorldClockAct
 import kotlinx.android.synthetic.main.activity_main.asynctask
 import kotlinx.android.synthetic.main.activity_main.calculator
 import kotlinx.android.synthetic.main.activity_main.coroutines
+import kotlinx.android.synthetic.main.activity_main.file
 import kotlinx.android.synthetic.main.activity_main.listview
 import kotlinx.android.synthetic.main.activity_main.recyclerview
 import kotlinx.android.synthetic.main.activity_main.rssreader
@@ -56,6 +58,10 @@ class MainActivity : AppCompatActivity() {
 
         rssreader.setOnClickListener {
             startActivity(Intent(this, RssReaderActivity::class.java))
+        }
+
+        file.setOnClickListener {
+            startActivity(Intent(this, FileActivity::class.java))
         }
     }
 }

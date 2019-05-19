@@ -11,43 +11,41 @@
             android:text="Calculator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/calculator" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="136dp"
+            android:id="@+id/calculator" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="136dp" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="135dp" android:layout_marginRight="135dp" android:layout_marginTop="33dp"
+            android:layout_marginEnd="135dp" android:layout_marginTop="15dp"
             app:layout_constraintTop_toTopOf="parent"/>
     <Button
             android:text="SharedPreferences"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/sharedpreferences" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="136dp"
             android:layout_marginStart="136dp" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="135dp" android:layout_marginRight="135dp" android:layout_marginTop="30dp"
+            android:layout_marginEnd="135dp" android:layout_marginTop="15dp"
             app:layout_constraintHorizontal_bias="0.518" app:layout_constraintTop_toBottomOf="@+id/calculator"/>
     <Button
             android:text="ListView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/listview" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="136dp"
             android:layout_marginStart="136dp" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="135dp" android:layout_marginRight="135dp" android:layout_marginTop="30dp"
+            android:layout_marginEnd="135dp" android:layout_marginTop="15dp"
             app:layout_constraintHorizontal_bias="0.518" app:layout_constraintTop_toBottomOf="@+id/sharedpreferences"
-            />
+    />
     <Button
             android:text="worldclock"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/worldclock" android:layout_marginEnd="8dp"
             app:layout_constraintTop_toBottomOf="@+id/listview"
-            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp" android:layout_marginTop="30dp"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:layout_marginTop="15dp"/>
     <Button
             android:text="Asynctask"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/asynctask" android:layout_marginTop="30dp"
+            android:id="@+id/asynctask" android:layout_marginTop="15dp"
             app:layout_constraintTop_toBottomOf="@+id/worldclock"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="60dp"/>
@@ -55,7 +53,7 @@
             android:text="Coroutines"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/coroutines" android:layout_marginTop="30dp"
+            android:id="@+id/coroutines" android:layout_marginTop="15dp"
             app:layout_constraintTop_toBottomOf="@+id/worldclock" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="60dp"
     />
@@ -63,7 +61,7 @@
             android:text="RecyclerView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/recyclerview" android:layout_marginTop="30dp"
+            android:id="@+id/recyclerview" android:layout_marginTop="15dp"
             app:layout_constraintTop_toBottomOf="@+id/coroutines" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp"/>
@@ -73,6 +71,14 @@
             android:layout_height="wrap_content"
             android:id="@+id/rssreader" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="8dp" android:layout_marginTop="30dp"
+            android:layout_marginStart="8dp" android:layout_marginTop="15dp"
             app:layout_constraintTop_toBottomOf="@+id/recyclerview"/>
+    <Button
+            android:text="file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/file" android:layout_marginEnd="8dp" app:layout_constraintTop_toBottomOf="@+id/rssreader"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:layout_marginTop="15dp"/>
 </android.support.constraint.ConstraintLayout>
